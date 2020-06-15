@@ -157,13 +157,6 @@ if(message.author.bot) return;
                   .setColor('#5CC5FF')
                   .setDescription(`${guild.roles.cache.map(role => role.toString()).join(' ')}`);
                 message.channel.send(embed);
-                let embed99 = new Discord.MessageEmbed()
-                .setColor('RANDOM')
-                .setAuthor(`Stats Command`)
-                .addField('The Player Which Used Stats Command', `${message.author} with an ID: ${message.author.id}`)
-                .addField('Use Time', message.createdAt)
-                .addField('Used At', message.channel)
-                bot.channels.cache.get('700091738051837983').send(embed99)
               }
             }
 //////////////////////////////////////////guess my age command {gma}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\     
@@ -188,7 +181,7 @@ let yyEmbed = new Discord.MessageEmbed()
 message.channel.send(yyEmbed)
 }
 //////////////////////////////////////ping command\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-if(message.content.startsWith( config.prefix + 'ping')) { 
+if(message.content.startsWith( prefix + 'ping')) { 
 var chance = Math.floor(Math.random() * 500);
             if (chance == 70){
                 random = 100 || 500
@@ -225,7 +218,7 @@ message.channel.startTyping();
 randomPuppy(subreddit).then(async body => {
 let cEmbed = new Discord.MessageEmbed()
 .setColor("RANDOM")
-.setAuthor(`${bot.user.username} Meme!`, message.guild.iconURL)
+.setAuthor(`${bot.user.username} Meme!`, message.guild.iconURL())
 .setImage(body)
 .setTimestamp()
 .setFooter(bot.user.username.toUpperCase(), bot.user.displayAvatarURL)
