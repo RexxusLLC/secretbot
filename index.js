@@ -58,7 +58,7 @@ if(message.content.toLowerCase().startsWith( prefix + 'flip')) {
     if(message.content.toLowerCase().startsWith( prefix + 'role')) {
     let member = message.mentions.members.first();
                  let role = message.guild.roles.cache.find(role => role.name === args[3]);
-             if (!message.member.roles.cache.find(r => r.name === '🌀Master' || r.name === 'Project Lead' || r.name === 'Coder' || r.name === '🛠️Developer' || r.name === 'Especial' || r.name === '🤺Secret TEAM' || r.name === 'Secret Moderator' || r.name === 'Administrator' || r.name === '🔰Moderator' || r.name === '🛡️Manager' || r.name === '👺Management' || r.name === '⚡Staff')) return message.reply('You Dont Have Permissions!')
+             if (!message.member.roles.cache.find(r => r.name === '🌀Master' || r.name === 'Project Lead' || r.name === 'Coder' || r.name === '🛠️Developer' || r.name === 'Especial' || r.name === '🤺Secret TEAM' || r.name === 'Secret Moderator' || r.name === 'Administrator' || r.name === '🔰Moderator' || r.name === '👺Management' || r.name === '⚡Staff')) return message.reply('You Dont Have Permissions!')
                  else if (!args[1]) return message.reply('Please enter give or remove')
                  else if ((!args[1] === "give") || (!args[1] === "remove")) return message.reply('Please enter give or remove')
                  else if (!args[2]) return message.reply('Please enter a user')
@@ -97,7 +97,7 @@ let commands = ['``ping``','``role <give or remove> <@user> <role_name>``','``ki
     }  
 //////////////////////////////////////////say command\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 if(message.content.toLowerCase().startsWith( prefix + 'say')) {
-if (!message.member.roles.cache.find(r => r.name === '🌀Master' || r.name === 'Project Lead' || r.name === 'Coder' || r.name === '🛠️Developer' || r.name === 'Especial' || r.name === '🤺Secret TEAM' || r.name === 'Secret Moderator' || r.name === 'Administrator' || r.name === '🔰Moderator' || r.name === '🛡️Manager' || r.name === '👺Management' || r.name === '⚡Staff')) return message.reply('You Dont Have Permissions!')
+if (!message.member.roles.cache.find(r => r.name === '🌀Master' || r.name === 'Project Lead' || r.name === 'Coder' || r.name === '🛠️Developer' || r.name === 'Especial' || r.name === '🤺Secret TEAM' || r.name === 'Secret Moderator' || r.name === 'Administrator' || r.name === '🔰Moderator' || r.name === '👺Management' || r.name === '⚡Staff')) return message.reply('You Dont Have Permissions!')
     if(!args[1]) return message.reply('Please define channel!')
     if(!args[2]) return message.reply('Please define message!')
     let argsresult;
@@ -258,7 +258,7 @@ member1.roles.add(role1).catch(console.error).then(message.channel.send('Success
 }
 //////////////////////////////////////////ping command\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
  if(message.content.toLowerCase().startsWith( prefix + 'createpoll')) {
-if (!message.member.roles.cache.find(r => r.name === '🌀Master' || r.name === 'Project Lead' || r.name === 'Coder' || r.name === '🛠️Developer' || r.name === 'Especial' || r.name === '🤺Secret TEAM' || r.name === 'Secret Moderator' || r.name === 'Administrator' || r.name === '🔰Moderator' || r.name === '🛡️Manager' || r.name === '👺Management' || r.name === '⚡Staff')) return message.reply('You Dont Have Permissions!')
+if (!message.member.roles.cache.find(r => r.name === '🌀Master' || r.name === 'Project Lead' || r.name === 'Coder' || r.name === '🛠️Developer' || r.name === 'Especial' || r.name === '🤺Secret TEAM' || r.name === 'Secret Moderator' || r.name === 'Administrator' || r.name === '🔰Moderator' || r.name === '👺Management' || r.name === '⚡Staff')) return message.reply('You Dont Have Permissions!')
         let args = message.content.split(" ");
         let time = args[1];
         let question = args.slice(2).join(" ");
