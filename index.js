@@ -242,7 +242,7 @@ let uEmbed = new Discord.MessageEmbed()
 }
 //////////////////////////////////////////unmute command\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 if(message.content.startsWith( prefix + 'unmute')) {
-if (!message.member.roles.cache.find(r => r.name === '🌀Master' || r.name === 'Project Lead' || r.name === 'Coder' || r.name === '🛠️Developer' || r.name === 'Especial' || r.name === '🤺Secret TEAM' || r.name === 'Secret Moderator' || r.name === 'Administrator' || r.name === '🔰Moderator' || r.name === '🛡️Manager' || r.name === '👺Management' || r.name === '⚡Staff')) return message.reply('You Dont Have Permissions!')
+if (!message.member.roles.cache.find(r => r.name === '🌀Master' || r.name === 'Project Lead' || r.name === 'Coder' || r.name === '🛠️Developer' || r.name === 'Especial' || r.name === '🤺Secret TEAM' || r.name === 'Secret Moderator' || r.name === 'Administrator' || r.name === '🔰Moderator' || r.name === '👺Management' || r.name === '⚡Staff')) return message.reply('You Dont Have Permissions!')
         if (!args[1]) return message.reply('Please specify a user to be unmuted!')
         let member2 = message.mentions.members.first();
         let role2 = message.guild.roles.cache.find(role => role.name === 'Banned');
@@ -250,7 +250,7 @@ if (!message.member.roles.cache.find(r => r.name === '🌀Master' || r.name === 
 }
 //////////////////////////////////////////mute command\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 if(message.content.startsWith( prefix + 'mute')) {
-if (!message.member.roles.cache.find(r => r.name === '🌀Master' || r.name === 'Project Lead' || r.name === 'Coder' || r.name === '🛠️Developer' || r.name === 'Especial' || r.name === '🤺Secret TEAM' || r.name === 'Secret Moderator' || r.name === 'Administrator' || r.name === '🔰Moderator' || r.name === '🛡️Manager' || r.name === '👺Management' || r.name === '⚡Staff')) return message.reply('You Dont Have Permissions!')
+if (!message.member.roles.cache.find(r => r.name === '🌀Master' || r.name === 'Project Lead' || r.name === 'Coder' || r.name === '🛠️Developer' || r.name === 'Especial' || r.name === '🤺Secret TEAM' || r.name === 'Secret Moderator' || r.name === 'Administrator' || r.name === '🔰Moderator' || r.name === '👺Management' || r.name === '⚡Staff')) return message.reply('You Dont Have Permissions!')
 if (!args[1]) return message.reply('Please specify a user to be muted!')
 let member1 = message.mentions.members.first();
 let role1 = message.guild.roles.cache.find(role => role.name === 'Banned');
