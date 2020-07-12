@@ -15,13 +15,13 @@ bot.on("message", async message => {
     let args = message.content.substring(prefix.length).split(" ");
 //////////////////////////////////////////clear command\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 if(message.content.toLowerCase().startsWith( prefix + 'clear')) {
-if (!message.member.roles.cache.find(r => r.name === '🌀Master' || r.name === 'Project Lead' || r.name === 'Coder' || r.name === '🛠️Developer' || r.name === 'Especial' || r.name === '🤺Secret TEAM' || r.name === 'Secret Moderator' || r.name === 'Administrator' || r.name === '🔰Moderator' || r.name === '🛡️Manager' || r.name === '👺Management' || r.name === '⚡Staff')) return message.reply('You Dont Have Permissions!')
+if (!message.member.roles.cache.find(r => r.name === '🌀Master' || r.name === 'Project Lead' || r.name === 'Coder' || r.name === '🛠️Developer' || r.name === 'Especial' || r.name === '🤺Secret TEAM' || r.name === 'Secret Moderator' || r.name === 'Administrator' || r.name === '🔰Moderator' || r.name === '👑SL Manager' || r.name === '👺Management' || r.name === '⚡Staff')) return message.reply('You Dont Have Permissions!')
         if(!args[1]) return message.channel.send("Please define second args!")
             message.channel.bulkDelete(args[1]);
     }
 //////////////////////////////////////////kick command\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     if(message.content.toLowerCase().startsWith( prefix + 'kick')) {
-        if (!message.member.roles.cache.find(r => r.name === '🌀Master' || r.name === 'Project Lead' || r.name === 'Coder' || r.name === '🛠️Developer' || r.name === 'Especial' || r.name === '🤺Secret TEAM' || r.name === 'Secret Moderator' || r.name === 'Administrator' || r.name === '🔰Moderator' || r.name === '🛡️Manager' || r.name === '👺Management' || r.name === '⚡Staff')) return message.reply('You Dont Have Permissions!')
+        if (!message.member.roles.cache.find(r => r.name === '🌀Master' || r.name === 'Project Lead' || r.name === 'Coder' || r.name === '🛠️Developer' || r.name === 'Especial' || r.name === '🤺Secret TEAM' || r.name === 'Secret Moderator' || r.name === 'Administrator' || r.name === '🔰Moderator' || r.name === '👑SL Manager' || r.name === '👺Management' || r.name === '⚡Staff')) return message.reply('You Dont Have Permissions!')
             if (!args[1]) return message.reply('**You Need To Specify A Person**')
             const user = message.mentions.users.first();
             let rreason = message.content.slice(29)
