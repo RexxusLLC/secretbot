@@ -9,7 +9,7 @@ const prefix = 'a!'
 bot.on('ready', () => {
     console.log('I am ready to help');
     console.log(`Logged in as Rexxus`);
-    bot.user.setActivity('Moderating Secret Letter!');
+    bot.user.setActivity('Development Secret Letter!');
 })
 bot.on("message", async message => {
     let args = message.content.substring(prefix.length).split(" ");
